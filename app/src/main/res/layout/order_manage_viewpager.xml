@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:padding="1dp"-->
+        <!--android:background="@drawable/select_shape">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/id_order_no"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:text="未付款"-->
+            <!--android:background="@color/textDefaultColor"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="14sp"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@color/colorDarkGray" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/id_order_yes"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:text="已付款"-->
+            <!--android:textSize="14sp"-->
+            <!--android:background="@color/backgroundColor"-->
+            <!--android:textColor="@color/textDefaultColor"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/id_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/backgroundRed"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="全部订单"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/id_order_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:dividerHeight="4dp"
+        android:divider="#00000000"/>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/item_shape"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:id="@+id/id_item_layout">
+
+    <TextView
+        android:id="@+id/id_number"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/table_bg"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="桌号:"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorOrange"/>
+
+            <TextView
+                android:id="@+id/id_table_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="状态:"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorOrange"/>
+
+            <TextView
+                android:id="@+id/id_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="#F5696D"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/id_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:src="@mipmap/unlock"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/id_arrow"/>
+        <ImageView
+            android:id="@+id/id_arrow"
+            android:layout_width="12dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/left_arrow"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

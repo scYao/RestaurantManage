@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_shape"
+    android:padding="4dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/id_ticke_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/textDefaultColor"
+            android:text="票号:"
+            android:textSize="16sp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_toRightOf="@+id/id_ticke_number"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/id_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="接口设计考虑了解到"/>
+
+        <ImageView
+            android:layout_toRightOf="@id/id_shop_name"
+            android:layout_marginLeft="30dp"
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/left_arrow"/>
+
+        <TextView
+            android:id="@+id/id_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textDefaultColor"
+            android:text="交易完成"/>
+    </RelativeLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_item_finish_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    <!--<com.example.administrator.restaurantmanage.utils.ChildLiistView-->
+        <!--android:id="@+id/id_item_finish_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="4dp"-->
+        <!--android:scrollbars="none"-->
+        <!--android:dividerHeight="1px"-->
+        <!--android:scrollingCache="false"/>-->
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightGray"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/lightGray"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/id_total_fee"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
